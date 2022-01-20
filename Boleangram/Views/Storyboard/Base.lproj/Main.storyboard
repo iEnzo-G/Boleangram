@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wcz-bx-XCt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wcz-bx-XCt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,8 +15,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F4o-vX-pib">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="DDh-Mj-Qsj" kind="relationship" relationship="viewControllers" id="9fH-fH-7UX"/>
@@ -34,7 +34,7 @@
         <scene sceneID="UH9-kX-ypZ">
             <objects>
                 <navigationController id="OZ2-2r-g3l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="camera.fill" catalog="system" id="Fou-Pw-cZj"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="Fou-Pw-cZj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O6m-gQ-Yft">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,7 +51,7 @@
         <scene sceneID="sld-N4-7Zb">
             <objects>
                 <navigationController id="4BU-az-xfw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" id="4XX-Pf-N4b"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="4XX-Pf-N4b"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nD4-Wc-fQE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -115,11 +115,11 @@
             </objects>
             <point key="canvasLocation" x="-2759" y="864"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Tbh-oi-zfF">
             <objects>
-                <viewController id="WDQ-J2-6LO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wo3-vg-Vgl" customClass="Homevi">
+                <viewController id="WDQ-J2-6LO" customClass="HomeViewController" customModule="Boleangram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wo3-vg-Vgl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="K7W-SK-cp2"/>
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="-2759" y="1570"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="GNC-Oh-Agf">
             <objects>
-                <viewController id="KY5-JZ-9UV" sceneMemberID="viewController">
+                <viewController id="KY5-JZ-9UV" customClass="ProfileViewController" customModule="Boleangram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g8o-xj-2mw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="442" y="1570"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification View Controller-->
         <scene sceneID="Msb-uI-rv3">
             <objects>
-                <viewController id="PCV-LA-orS" sceneMemberID="viewController">
+                <viewController id="PCV-LA-orS" customClass="NotificationViewController" customModule="Boleangram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1CQ-h2-0hV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="-310" y="1570"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="U8F-1F-cHU">
             <objects>
-                <viewController id="pJp-kf-ydy" sceneMemberID="viewController">
+                <viewController id="pJp-kf-ydy" customClass="CameraViewController" customModule="Boleangram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o4H-GK-oZw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="-1175" y="1570"/>
         </scene>
-        <!--View Controller-->
+        <!--Explore View Controller-->
         <scene sceneID="8eR-1j-EdF">
             <objects>
-                <viewController id="vjC-eX-LaT" sceneMemberID="viewController">
+                <viewController id="vjC-eX-LaT" customClass="ExploreViewController" customModule="Boleangram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kfe-tS-Kp9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,11 +197,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
-        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

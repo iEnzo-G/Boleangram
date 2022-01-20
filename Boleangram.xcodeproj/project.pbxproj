@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22AC46836F6CC94AF18A2AC8 /* Pods_Boleangram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E69CCB85A549DD575F35B4 /* Pods_Boleangram.framework */; };
 		543A644D278E1B70000EA779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A644C278E1B70000EA779 /* AppDelegate.swift */; };
 		543A644F278E1B70000EA779 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A644E278E1B70000EA779 /* SceneDelegate.swift */; };
 		543A6451278E1B70000EA779 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A6450278E1B70000EA779 /* HomeViewController.swift */; };
@@ -26,6 +27,11 @@
 		543A647D278E1E35000EA779 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A647C278E1E35000EA779 /* SearchViewController.swift */; };
 		543A647F278E1E4C000EA779 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A647E278E1E4C000EA779 /* SearchResultViewController.swift */; };
 		543A6481278E1EA3000EA779 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A6480278E1EA3000EA779 /* PublishPostViewController.swift */; };
+		543A648A278E4731000EA779 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A6489278E4731000EA779 /* DatabaseManager.swift */; };
+		543A648C278E5002000EA779 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A648B278E5002000EA779 /* AuthManager.swift */; };
+		543A648E278E5095000EA779 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A648D278E5095000EA779 /* StorageManager.swift */; };
+		543A6490278E56EB000EA779 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543A648F278E56EB000EA779 /* Extensions.swift */; };
+		549CD4A62791F12000328995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 549CD4A52791F12000328995 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,14 @@
 		543A647C278E1E35000EA779 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		543A647E278E1E4C000EA779 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		543A6480278E1EA3000EA779 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		543A6489278E4731000EA779 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		543A648B278E5002000EA779 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		543A648D278E5095000EA779 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		543A648F278E56EB000EA779 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		549CD4A52791F12000328995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A0D7D9CC501953B3154BAAF /* Pods-Boleangram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boleangram.release.xcconfig"; path = "Target Support Files/Pods-Boleangram/Pods-Boleangram.release.xcconfig"; sourceTree = "<group>"; };
+		B997F9F5092E85807EF784AC /* Pods-Boleangram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boleangram.debug.xcconfig"; path = "Target Support Files/Pods-Boleangram/Pods-Boleangram.debug.xcconfig"; sourceTree = "<group>"; };
+		D7E69CCB85A549DD575F35B4 /* Pods_Boleangram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boleangram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AC46836F6CC94AF18A2AC8 /* Pods_Boleangram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0560D0AF53146D1A82C52A1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B997F9F5092E85807EF784AC /* Pods-Boleangram.debug.xcconfig */,
+				8A0D7D9CC501953B3154BAAF /* Pods-Boleangram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		543A6440278E1B70000EA779 = {
 			isa = PBXGroup;
 			children = (
 				543A644B278E1B70000EA779 /* Boleangram */,
 				543A644A278E1B70000EA779 /* Products */,
+				0560D0AF53146D1A82C52A1F /* Pods */,
+				6F1830F7F6CB4F53403F667B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,8 +138,13 @@
 		543A6462278E1B90000EA779 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				549CD4A52791F12000328995 /* GoogleService-Info.plist */,
 				543A644C278E1B70000EA779 /* AppDelegate.swift */,
 				543A644E278E1B70000EA779 /* SceneDelegate.swift */,
+				543A6489278E4731000EA779 /* DatabaseManager.swift */,
+				543A648B278E5002000EA779 /* AuthManager.swift */,
+				543A648D278E5095000EA779 /* StorageManager.swift */,
+				543A648F278E56EB000EA779 /* Extensions.swift */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -157,17 +188,33 @@
 		543A646F278E1D65000EA779 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				543A6488278E45F4000EA779 /* General */,
+				543A6470278E1D86000EA779 /* LoginViewController.swift */,
+				543A6472278E1D98000EA779 /* RegistrationViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		543A6488278E45F4000EA779 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				543A6478278E1DF3000EA779 /* SettingsViewController.swift */,
 				543A647C278E1E35000EA779 /* SearchViewController.swift */,
 				543A647E278E1E4C000EA779 /* SearchResultViewController.swift */,
 				543A647A278E1E26000EA779 /* ListViewController.swift */,
 				543A6476278E1DE6000EA779 /* EditViewController.swift */,
-				543A6478278E1DF3000EA779 /* SettingsViewController.swift */,
 				543A6474278E1DBA000EA779 /* PostViewController.swift */,
-				543A6470278E1D86000EA779 /* LoginViewController.swift */,
-				543A6472278E1D98000EA779 /* RegistrationViewController.swift */,
 				543A6480278E1EA3000EA779 /* PublishPostViewController.swift */,
 			);
-			path = Onboarding;
+			path = General;
+			sourceTree = "<group>";
+		};
+		6F1830F7F6CB4F53403F667B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7E69CCB85A549DD575F35B4 /* Pods_Boleangram.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 543A645D278E1B71000EA779 /* Build configuration list for PBXNativeTarget "Boleangram" */;
 			buildPhases = (
+				C3EC29AE7C5808F9FA2F08D3 /* [CP] Check Pods Manifest.lock */,
 				543A6445278E1B70000EA779 /* Sources */,
 				543A6446278E1B70000EA779 /* Frameworks */,
 				543A6447278E1B70000EA779 /* Resources */,
+				B34B30F563F45059A20B8D8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,12 +278,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				543A6459278E1B71000EA779 /* LaunchScreen.storyboard in Resources */,
+				549CD4A62791F12000328995 /* GoogleService-Info.plist in Resources */,
 				543A6456278E1B71000EA779 /* Assets.xcassets in Resources */,
 				543A6454278E1B70000EA779 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B34B30F563F45059A20B8D8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boleangram/Pods-Boleangram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boleangram/Pods-Boleangram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Boleangram/Pods-Boleangram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3EC29AE7C5808F9FA2F08D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boleangram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		543A6445278E1B70000EA779 /* Sources */ = {
@@ -245,14 +337,18 @@
 				543A6466278E1C21000EA779 /* CameraViewController.swift in Sources */,
 				543A646A278E1C6C000EA779 /* NotificationViewController.swift in Sources */,
 				543A6473278E1D98000EA779 /* RegistrationViewController.swift in Sources */,
+				543A648A278E4731000EA779 /* DatabaseManager.swift in Sources */,
 				543A6475278E1DBA000EA779 /* PostViewController.swift in Sources */,
 				543A6468278E1C34000EA779 /* ExploreViewController.swift in Sources */,
+				543A648C278E5002000EA779 /* AuthManager.swift in Sources */,
 				543A6481278E1EA3000EA779 /* PublishPostViewController.swift in Sources */,
+				543A648E278E5095000EA779 /* StorageManager.swift in Sources */,
 				543A6471278E1D86000EA779 /* LoginViewController.swift in Sources */,
 				543A647F278E1E4C000EA779 /* SearchResultViewController.swift in Sources */,
 				543A646C278E1C80000EA779 /* ProfileViewController.swift in Sources */,
 				543A647D278E1E35000EA779 /* SearchViewController.swift in Sources */,
 				543A644D278E1B70000EA779 /* AppDelegate.swift in Sources */,
+				543A6490278E56EB000EA779 /* Extensions.swift in Sources */,
 				543A6477278E1DE6000EA779 /* EditViewController.swift in Sources */,
 				543A644F278E1B70000EA779 /* SceneDelegate.swift in Sources */,
 				543A647B278E1E26000EA779 /* ListViewController.swift in Sources */,
@@ -400,6 +496,7 @@
 		};
 		543A645E278E1B71000EA779 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B997F9F5092E85807EF784AC /* Pods-Boleangram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -408,11 +505,13 @@
 				DEVELOPMENT_TEAM = 4YN9289X4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Boleangram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Booleangram;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,12 +521,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		543A645F278E1B71000EA779 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0D7D9CC501953B3154BAAF /* Pods-Boleangram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,11 +536,13 @@
 				DEVELOPMENT_TEAM = 4YN9289X4K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Boleangram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Booleangram;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
